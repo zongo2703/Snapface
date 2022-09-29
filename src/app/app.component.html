@@ -8,8 +8,6 @@
 </head>
 
 <body>
-    <app-face-snap [faceSnap]="oneSnap" ></app-face-snap>
-    <app-face-snap [faceSnap]="twoSnap" ></app-face-snap>
-    <app-face-snap [faceSnap]="thirdSnap" ></app-face-snap>
+    <app-face-snap *ngFor=" let faceSnap of faceSnaps" [faceSnap]="faceSnap" ></app-face-snap>
 </body>
 </html>
