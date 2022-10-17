@@ -1,11 +1,8 @@
-<section class="container">
+<section class="container" xmlns="http://www.w3.org/1999/html">
  <div class="face-snap-card " [ngClass]="{ snapped: buttonText === 'Oops un Snap!' }">
- <h2> {{faceSnap.title | titlecase}} </h2>
- <img [src]="faceSnap.imageUrl">
+   <h2> {{faceSnap.title | titlecase}} </h2>
    <p> {{faceSnap.description | uppercase}} </p>
-  <p *ngIf="faceSnap.location"> Photo prise à {{faceSnap.location | lowercase}} </p>
-  <p> Mis en ligne le {{faceSnap.createDate | date : 'le d MMMM yyyy, à HH:mm:ss'}} </p>
-  <p> <button (click)="onSnap()"  id ="snaped"> {{buttonText}} </button>
-    <span [ngStyle]="{ color: 'rgb(0, ' + faceSnap.snaps + ', 0)' }"> ❤️{{faceSnap.snaps}} </span> </p>
+   <button (click)="onView()"> VIEW </button>
  </div>
 </section>
+

@@ -1,0 +1,23 @@
+header {
+  color: tomato;
+  font-family: "Times New Roman";
+  font-size: 20px;
+  margin: 20px;
+  background-color: antiquewhite;
+  text-align: center;
+  padding: 10px;
+}
+
+a {
+  margin: 0 10px;
+  color: #333;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.active {
+  color: blueviolet;
+  text-decoration: underline;
+}
